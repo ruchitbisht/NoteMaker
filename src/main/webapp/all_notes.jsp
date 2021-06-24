@@ -28,7 +28,16 @@
 				for (Note note : list) {
 				%>
 
-				out.println(note.getId()+" :"+note.getTitle()+"<br>");
+				<div class="card mt-3" >
+					<img class="card-img-top p-2" style="max-width: 100px;" src="img/notes.png" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title"><%= note.getTitle() %></h5>
+						<p class="card-text">
+						<%= note.getContent() %>
+						</p>
+						<a href="#" class="btn btn-danger">Delete</a>
+					</div>
+				</div>
 
 				<%
 				}
