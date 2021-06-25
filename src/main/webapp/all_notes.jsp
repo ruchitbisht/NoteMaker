@@ -37,7 +37,7 @@
 						</p>
 						<div class="container text-center mt-4">
 							<a href="DeleteServlet?note_id=<%= note.getId() %>" class="btn btn-danger">Delete</a>
-						<a href="#" class="btn btn-primary">Update</a>						
+						<a href="update.jsp?note_id=<%= note.getId() %>" class="btn btn-primary">Update</a>						
 						</div>
 					</div>
 				</div>
